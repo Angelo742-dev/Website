@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #4aa;
+      padding: 1rem;
+    }
+
+    .logo {
+      font-weight: bold;
+      color: white;
+    }
+
+    .menu a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      padding: 1rem;
+    }
+
+    .sidebar {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .sidebar-box {
+      background: #8ac;
+      padding: 1rem;
+      color: white;
+    }
+
+    .main-content {
+      width: 75%;
+      background: #346;
+      color: white;
+      padding: 2rem;
+      margin-left: 1rem;
+    }
+
+    .image-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    .image-box {
+      background: #346;
+      color: white;
+      padding: 1rem;
+      width: 32%;
+      text-align: center;
+    }
+
+    .image {
+      background: white;
+      color: #000;
+      margin-top: 0.5rem;
+      padding: 2rem 0;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .footer {
+      background: #4aa;
+      text-align: center;
+      padding: 1rem;
+      color: white;
+      margin-top: 1rem;
+    }
+
+    .image p {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #232B6E;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">LOGO</div>
+    <nav class="menu">
+      <a href="#1">ABOUT ME</a>
+      <a href="#2">MY TWO SISTERS</a>
+      <a href="#3">MY BESTIE</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-box">
+        <h3> Undercover High School</h3><br>
+        <p>Undercover High School is a 2025 South Korean action comedy spy television series written by Im Young-bin, directed by Choi Jung-in, and starring Seo Kang-joon, Jin Ki-joo, and Kim Shin-rok. The series depicts a man who is an NIS agent who goes undercover as a high school student.</p>
+      </div>
+      <div class="sidebar-box">
+        <h3> Newtopia</h3><br>
+        <p>Lee Jae-yoon, a soldier serving his compulsory military service, breaks up with his girlfriend Kang Young-joo; when a zombie outbreak occurs in Seoul, they both race to reunite with each other.</p>
+      </div>
+      <div class="sidebar-box">
+        <h3> When Life Gives You Tangerines</h3><br>
+        <p>When Life Gives You Tangerines is a 2025 South Korean romance slice-of-life television series written by Lim Sang-choon, directed by Kim Won-seok, and starring IU, Park Bo-gum, Moon So-ri, and Park Hae-joon. It was released on Netflix between March 7–28, 2025.</p>
+          </div>
+      <div class="sidebar-box">
+        <h3> While You Were Sleeping</h3><br>
+        <p>A young woman has visions through her dreams of terrible things that will happen to people in the future; a prosecutor tries to prevent these dreams from happening in real life.</p>
+        
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <h2>MY BOYFRIEND</h2>
+      <img src="https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/489450706_1719389875627783_6869361363954638764_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHh7qs3A8LhmJjowinEX7wvXThuYBECXlddOG5gEQJeV2WEsG9yW8qVPI3-CcuWyk3OwksSReatopgD1G4ONcAs&_nc_ohc=pQ81M-Pqt_0Q7kNvwFdTBDd&_nc_oc=AdmVR8aGAaD5jP-XR0j_9l2JXkUSgMAe-y9e1FEAnP2f_Uy4kjcDTOq5EqzIeZiNHjJXEGqxMQM6m7_ATYuYX6qm&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=zB-Qvr4zdKRZmvYbocFiCQ&oh=00_AfGAtVlxKIZN9ou04CDnoy_sbBh6d-qtopCpVM6cSxi2ew&oe=67F9466D" alt="My Supportive Jowables" style="max-width: 100%; height: auto;">
+      <p>I just want you both to know how much I love and appreciate you both. You are not just my sisters, but my best friends and confidantes. I am so grateful to have you both in my life to laugh with, cry with, and share all of life's ups and downs.</p><br>
+<p>Thank you for always being there for me, for supporting me, and for being the amazing women that you are. I love you both more than words can express.</p>
+    </main>
+  </div>
+
+  <section class="image-section">
+    <div class="image-box">
+      <h3 id="1">ABOUT ME</h3>
+      <div class="image">
+        <img src="https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/489088841_1719397865626984_5002952232374351344_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGb8ESPB0249fesWFRzwM_gFuveCdXWcggW694J1dZyCFtSTsJTqXKYsmUD1BPtwyfrJindWaX7ob5AlPFtZRVv&_nc_ohc=tMTvKnnjDAcQ7kNvwEhOHQs&_nc_oc=Adnkot872E-87Y4hUVg17qecOlt2KXqnXJkkUakADz-ATRKlsQyN-NyY3JIzNqihz6o_Enjj-oYZm1OC3PhbY5vp&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=B5ZHRiIsDByMrZZMfLUzhA&oh=00_AfH8H1IOHvbVx7VvbCZ3MRc29BJSsWTQB48DfHrTLcMOkA&oe=67F93B26" alt="Image 1">
+        <p>My name is Janelle and I am a motivated BSIT student with a passion for technology and innovation. I am currently honing my skills in programming languages such as Java, HTML, and CSS, and have a strong foundation in database management and cybersecurity. I am constantly seeking out new challenges and opportunities to expand my knowledge in the field of information technology.</p>
+      </div>
+    </div>
+    <div class="image-box">
+      <h3 id="2">MY TWO SISTERS</h3>
+      <div class="image">
+        <img src="https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/489334786_1719389672294470_7135080686660535536_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEpTKgKW7o_TET30Dt3KdWm3ZvtIYJFer3dm-0hgkV6vcfIQrHUDwc4FAEyRCtlenHf2DWTRoQa6QW0lqQy7wgC&_nc_ohc=zfrp4JzhN6UQ7kNvwF5Piew&_nc_oc=AdnUYENd3QV_bMU-TLxswJg_HJLI05jGRLwz4MU85tElWiKp1XvgcF0G04RjxJwRNbek5UqRffuJUZDlmKH6a0Wa&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=39I_cGgTcTSZSXBdmsYgTQ&oh=00_AfG7R0oqVIspuV9DrfRY-DM9czDxR3SI_0Z0UYQrv6zpfg&oe=67F91730" alt="Image 2">
+        <p>I just want you both to know how much I love and appreciate you both. You are not just my sisters, but my best friends and confidantes. I am so grateful to have you both in my life to laugh with, cry with, and share all of life's ups and downs.</p><br>
+        <p>Thank you for always being there for me, for supporting me, and for being the amazing women that you are. I love you both more than words can express.</p>
+      </div>
+    </div>
+    <div class="image-box">
+      <h3 id="3">MY BEST FRIENDS</h3>
+      <div class="image">
+        <img src="https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/488886198_1719389808961123_5471676540143108243_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGyaICOGvpP_JdfyYcSZqNbqMiMH0pTH6aoyIwfSlMfpj7PmwRZzKLsyHwA74G2lnaAF9BpYK3fwhGtukSkkD_d&_nc_ohc=EC3_qovUgFgQ7kNvwHUZFyX&_nc_oc=AdlI7hOQ8mcavfNhqFkTlOyzrWbN9bb_EvXbAhOz9dLQg13Wo2EG4aGQcbHDczykUPErEF1fjXZTxiIN0fCIsRT0&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=DnQp3D1p4aCHi1doGJvRwA&oh=00_AfFAZtCtBL8ttMoXKabvGEyy1u4bgvdv3qjyzV9Y2l0hnQ&oe=67F944BD" alt="Image 3">
+        <p>I am so incredibly lucky to have each and every one of you in my life. You all bring something unique and special to our friendship, and I am grateful for the love, support, and laughter you bring into my life every day. I just want you both to know how much I love and appreciate you both. You are not just my sisters, but my best friends and confidantes. I am so grateful to have you both in my life to laugh with, cry with, and share all of life's ups and downs.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+   Reserve all by janelle
+  </footer>
+</body>
+</html>
